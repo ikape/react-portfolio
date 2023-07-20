@@ -16,9 +16,7 @@ export const Home = () => {
         <p className='text-[#8892b0] py-4 max-w[700px]'>
           I always ensure to give it my all to yield results / productivity as
           well as legacy in any place I find myself if such opportunity could be
-          offered to me. I'm someone who is highly driven by knowledge, that is
-          the continuous process of learning new and additional things every day
-          is fulfilling to me...
+          offered to me. ...
         </p>
         <div className='flex  justify-center'>
           <button className='text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600'>
