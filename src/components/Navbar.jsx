@@ -1,15 +1,18 @@
 import React, { useState } from "react";
-import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes } from "react-icons/fa";
+import { FaBars, FaGithub,  FaLinkedin, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { MdNightsStay, MdWbSunny} from "react-icons/md";
 
-export const Navbar = () => {
+
+export const Navbar = ({darkMode, setDarkMode}) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 
+    dark:bg-[#0a192f] text-gray-900 bg-white dark:text-white'>
       <div>
-        <h4>II</h4>
+        <h4 className='text-lg'>II</h4>
       </div>
 
       {/* menu */}
@@ -19,6 +22,13 @@ export const Navbar = () => {
         <li>Skills</li>
         <li>Work</li>
         <li>Contact</li>
+        <div onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? (
+            <MdWbSunny className='text-2xl cursor-pointer' />
+          ) : (
+            <MdNightsStay className='text-2xl cursor-pointer' />
+          )}
+        </div>
       </ul>
 
       {/* Toggle */}
@@ -63,8 +73,7 @@ export const Navbar = () => {
             </a>
           </li>
           {/*  */}
-         
-        
+
           <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
             <a
               className='flex justify-between items-center w-full text-gray-300 '

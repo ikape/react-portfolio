@@ -2,12 +2,15 @@ import React from "react";
 
 export const About = () => {
   return (
-    <div name='about' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+    <div
+      name='about'
+      className='w-full h-screen dark:bg-[#0a192f] text-gray-900 bg-white dark:text-white'
+    >
       {/* container */}
       <div className='flex flex-col justify-center items-center w-full h-full'>
         <div className='max-w-[1000px] w-full grid grid-cols-2 gap-8'>
           <div className='sm:text-right pb-8 pl-4'>
-            <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
+            <p className='text-4xl font-bold inline border-b-4 border-[#1c6e8c]'>
               About
             </p>
           </div>
@@ -23,7 +26,7 @@ export const About = () => {
             </p>
           </div>
 
-          <div className="">
+          <div className=''>
             <p>
               I'm someone who is highly driven by knowledge, that is the
               continuous process of learning new and additional things every day

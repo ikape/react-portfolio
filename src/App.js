@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { About } from './components/About';
 import { Card } from './components/Card';
 import { Home } from './components/Home';
@@ -6,9 +7,12 @@ import { Skills } from './components/Skills';
 
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false)
+
   return (
-    <div className="App">
-      <Navbar />
+    <div className={darkMode && 'dark'}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <Home />
       <About />
       <Skills />
