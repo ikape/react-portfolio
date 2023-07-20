@@ -19,10 +19,9 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       {/* menu */}
       <ul className='hidden md:flex'>
         <li>Home</li>
-        {/* <li>About</li> */}
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li>My stacks</li>
+        <li>My work</li>
+        <li>Contact me</li>
         <div onClick={() => setDarkMode(!darkMode)}>
           {darkMode ? (
             <MdWbSunny className='text-2xl cursor-pointer' />
@@ -33,13 +32,7 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
       </ul>
 
       {/* Toggle */}
-      <div className='ml-auto' onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? (
-          <MdWbSunny className='text-2xl cursor-pointer' />
-        ) : (
-          <MdNightsStay className='text-2xl cursor-pointer' />
-        )}
-      </div>
+
       <div onClick={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
@@ -53,12 +46,17 @@ export const Navbar = ({ darkMode, setDarkMode }) => {
             : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center dark:bg-[#0a192f] text-gray-900  bg-white dark:text-white"
         }
       >
+        <div onClick={() => setDarkMode(!darkMode)}>
+          {darkMode ? (
+            <MdWbSunny className='text-2xl cursor-pointer' />
+          ) : (
+            <MdNightsStay className='text-2xl cursor-pointer' />
+          )}
+        </div>
         <li className='py-6 text-4xl'>Home</li>
-        {/* <li className='py-6 text-4xl'>About</li> */}
-        <li className='py-6 text-4xl'>Skills</li>
-        <li className='py-6 text-4xl'>Skills</li>
-        <li className='py-6 text-4xl'>Work</li>
-        <li className='py-6 text-4xl'>Contact</li>
+        <li className='py-6 text-4xl'>My stack</li>
+        <li className='py-6 text-4xl'>My works</li>
+        <li className='py-6 text-4xl'>Contact me</li>
       </ul>
 
       {/* socials */}
