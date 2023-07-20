@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { FaBars, FaGithub,  FaLinkedin, FaTimes } from "react-icons/fa";
+import { FaBars, FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { MdNightsStay, MdWbSunny} from "react-icons/md";
+import { MdNightsStay, MdWbSunny } from "react-icons/md";
 
-
-export const Navbar = ({darkMode, setDarkMode}) => {
+export const Navbar = ({ darkMode, setDarkMode }) => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
 
@@ -34,11 +33,19 @@ export const Navbar = ({darkMode, setDarkMode}) => {
       </ul>
 
       {/* Toggle */}
+      <div className='ml-auto' onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? (
+          <MdWbSunny className='text-2xl cursor-pointer' />
+        ) : (
+          <MdNightsStay className='text-2xl cursor-pointer' />
+        )}
+      </div>
       <div onClick={handleClick} className='md:hidden z-10'>
         {!nav ? <FaBars /> : <FaTimes />}
       </div>
 
       {/* mobile menu */}
+
       <ul
         className={
           !nav
