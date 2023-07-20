@@ -9,8 +9,10 @@ export const Navbar = ({darkMode, setDarkMode}) => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 
-    dark:bg-[#0a192f] text-gray-900  bg-white dark:text-white'>
+    <div
+      className='fixed w-full h-[80px] flex justify-between items-center px-4 
+    dark:bg-[#0a192f] text-gray-900  bg-white dark:text-white'
+    >
       <div>
         <h4 className='text-lg'>II</h4>
       </div>
@@ -41,7 +43,7 @@ export const Navbar = ({darkMode, setDarkMode}) => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen flex flex-col justify-center items-center dark:bg-[#0a192f] text-gray-900  bg-white dark:text-white"
         }
       >
         <li className='py-6 text-4xl'>Home</li>
