@@ -10,7 +10,7 @@ export const Navbar = ({darkMode, setDarkMode}) => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 
-    dark:bg-[#0a192f] text-gray-900 bg-white dark:text-white'>
+    dark:bg-[#0a192f] text-gray-900  bg-white dark:text-white'>
       <div>
         <h4 className='text-lg'>II</h4>
       </div>
