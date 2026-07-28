@@ -7,10 +7,11 @@ export function Contact() {
     <Section id="contact" index="05" title="Get In Touch" className="pb-28">
       <Reveal>
         <div className="max-w-xl">
-          <p className="mb-8 text-base leading-relaxed text-muted">
+          <p className="mb-3 text-base leading-relaxed text-muted">
             I&apos;m currently open to new opportunities, especially with teams building
             in fintech and payments. The fastest way to reach me is email.
           </p>
+          <p className="mb-8 font-mono text-sm text-accent">{site.locationNote}</p>
           <div className="flex flex-wrap gap-4">
             <a
               href={`mailto:${site.email}`}

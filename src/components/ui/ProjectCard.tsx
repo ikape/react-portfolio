@@ -1,4 +1,5 @@
-import { FiArrowUpRight, FiGithub } from "react-icons/fi";
+import Link from "next/link";
+import { FiArrowUpRight, FiArrowRight, FiGithub } from "react-icons/fi";
 import type { Project } from "@/data/projects";
 import { Tag } from "./Tag";
 
@@ -40,6 +41,15 @@ export function ProjectCard({ project }: { project: Project }) {
           <Tag key={tech}>{tech}</Tag>
         ))}
       </div>
+      {project.caseStudy && (
+        <Link
+          href={`/projects/${project.slug}`}
+          className="mt-5 flex items-center gap-1.5 font-mono text-sm text-accent transition-opacity hover:opacity-80"
+        >
+          Read case study
+          <FiArrowRight size={14} />
+        </Link>
+      )}
     </div>
   );
 }

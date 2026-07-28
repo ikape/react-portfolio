@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Isaac Ikape — Resume</title>
+<style>
+  @page { size: A4; margin: 16mm 18mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    color: #171717;
+    font-size: 10.3pt;
+    line-height: 1.45;
+    margin: 0;
+  }
+  .accent { color: #0891a8; }
+  header { margin-bottom: 14px; }
+  h1 {
+    font-size: 21pt;
+    margin: 0 0 2px 0;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .role {
+    font-size: 11.5pt;
+    color: #404040;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #525252;
+  }
+  .contact span:not(:last-child)::after {
+    content: " \2022 ";
+    color: #a3a3a3;
+  }
+  section { margin-bottom: 13px; }
+  h2 {
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #0891a8;
+    border-bottom: 1px solid #d4d4d4;
+    padding-bottom: 3px;
+    margin: 0 0 8px 0;
+  }
+  .profile { margin: 0; color: #262626; }
+  .entry { margin-bottom: 9px; }
+  .entry:last-child { margin-bottom: 0; }
+  .entry-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+  }
+  .entry-title { font-weight: 600; font-size: 10.3pt; }
+  .entry-org { font-weight: 400; color: #404040; }
+  .entry-date { font-size: 9pt; color: #737373; white-space: nowrap; }
+  .entry-loc { font-size: 9pt; color: #737373; margin-bottom: 3px; }
+  ul { margin: 3px 0 0 0; padding-left: 15px; }
+  li { margin-bottom: 2px; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 24px;
+    font-size: 9.5pt;
+  }
+  .skill-row b { color: #262626; }
+  .earlier { font-size: 9.3pt; color: #404040; }
+  .earlier li { margin-bottom: 3px; }
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 24px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Isaac Ikape</h1>
+  <p class="role">Software Engineer <span class="accent">(Frontend-Focused)</span></p>
+  <p class="contact">
+    <span>ikapeisaac3@gmail.com</span>
+    <span>+234 703 650 3218</span>
+    <span>github.com/ikape</span>
+    <span>linkedin.com/in/ikape</span>
+    <span>Lagos, Nigeria</span>
+  </p>
+</header>
+
+<section>
+  <h2>Profile</h2>
+  <p class="profile">Frontend-focused Software Engineer with 4+ years of experience building secure, scalable web and mobile applications using JavaScript, TypeScript, React, Next.js, and React Native. Experienced in automated testing (Jest, Cypress, Playwright), CI/CD, Docker, Sentry monitoring, and Agile development across Linux, macOS, and Windows environments.</p>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-row"><b>Languages:</b> JavaScript, TypeScript, Python, Bash</div>
+    <div class="skill-row"><b>Testing:</b> Jest, Cypress, Playwright</div>
+    <div class="skill-row"><b>Frontend:</b> React, Next.js, React Native, Redux, Context API, Tailwind CSS, Shadcn UI</div>
+    <div class="skill-row"><b>Practices:</b> CI/CD, Code Review, Agile/Scrum, Secure Coding</div>
+    <div class="skill-row"><b>Cloud/Tooling:</b> AWS, Vercel, Netlify, Docker, GitHub Actions, Firebase</div>
+    <div class="skill-row"><b>Monitoring:</b> Sentry, Production Debugging, Performance Optimization</div>
+  </div>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Software Engineer (Frontend-Focused) <span class="entry-org">— Value Payment Solutions</span></span>
+      <span class="entry-date">05/2025 – Present</span>
+    </div>
+    <div class="entry-loc">Abuja, Nigeria</div>
+    <ul>
+      <li>Build and maintain frontend interfaces for payment and finance workflows using React and TypeScript, aligned with financial compliance requirements.</li>
+      <li>Improve frontend load performance and reliability for high-traffic user flows; introduced Sentry monitoring for faster issue detection and resolution.</li>
+      <li>Contribute to CI/CD workflows, Docker-based deployments, and Bash automation to streamline releases.</li>
+      <li>Write unit/integration tests (Jest) and end-to-end tests (Cypress, Playwright), reducing regressions in production releases.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Frontend Engineer, Contract/Part-Time <span class="entry-org">— NITEON</span></span>
+      <span class="entry-date">07/2024 – 01/2026</span>
+    </div>
+    <div class="entry-loc">Remote, United States</div>
+    <ul>
+      <li>Delivered frontend and mobile features using React Native, Flutter, and Next.js.</li>
+      <li>Led frontend performance improvements, increasing page load speed and SEO effectiveness by 20%.</li>
+      <li>Integrated Firebase services and implemented secure frontend data flows.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Software Engineer, Contract <span class="entry-org">— SOS Creativity</span></span>
+      <span class="entry-date">07/2024 – 12/2024</span>
+    </div>
+    <div class="entry-loc">Manchester, United Kingdom</div>
+    <ul>
+      <li>Designed and maintained scalable frontend architectures using React and Next.js.</li>
+      <li>Implemented secure frontend patterns for authentication, form handling, and API communication.</li>
+      <li>Debugged and resolved production frontend issues in high-traffic environments.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Frontend Engineer, Part-Time <span class="entry-org">— Africart Store Enterprise</span></span>
+      <span class="entry-date">02/2024 – 12/2024</span>
+    </div>
+    <div class="entry-loc">Lagos, Nigeria</div>
+    <ul>
+      <li>Designed and developed scalable React and React Native apps for an apartment booking and reservation platform.</li>
+      <li>Integrated Laravel REST APIs and managed application state with Context API.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Software Engineer, Part-Time/Remote <span class="entry-org">— Codemanic Software Solutions</span></span>
+      <span class="entry-date">08/2023 – 08/2024</span>
+    </div>
+    <div class="entry-loc">Lagos, Nigeria</div>
+    <ul>
+      <li>Built and maintained scalable React applications using reusable component architectures.</li>
+      <li>Refactored legacy frontend codebases, reducing bug rates by 25% through improved testing and code review.</li>
+      <li>Led frontend implementation for assigned features, conducted code reviews, and mentored junior developers.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Earlier Experience</h2>
+  <ul class="earlier">
+    <li><b>Full Stack Developer (Volunteer), Navigating with Neol</b> — 09/2023–12/2024 — improved site performance 15% via optimized MongoDB/Node.js APIs.</li>
+    <li><b>Software Developer (Intern), Glumia Solutions</b> — 03/2024–09/2024 — built REST APIs with Node/Express/NestJS; optimized PostgreSQL/MongoDB with TypeORM.</li>
+    <li><b>Full Stack Developer (Intern), Seedbuilders</b> — 07/2022–06/2023 — intensive training building CRUD apps and startup MVPs.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Selected Projects</h2>
+  <ul class="earlier">
+    <li><b>Afribooking Agent App</b> — React, React Native, Node.js, MongoDB, AWS, Docker. Property booking platform with in-app payments and push notifications.</li>
+    <li><b>Africartz User Booking App</b> — React Native, TypeScript, Tailwind CSS, Laravel. Apartment booking, inspection, and payment flow.</li>
+    <li><b>NITEON Marketplace</b> — Next.js, Tailwind CSS, Redux, Node.js, AWS. B2B marketplace connecting African businesses globally.</li>
+    <li><b>Glumia Solutions</b> — React.js, Next.js, TypeScript, PostgreSQL, AWS, Firebase. Multi-sector software solutions.</li>
+  </ul>
+</section>
+
+<div class="two-col">
+  <section>
+    <h2>Certifications</h2>
+    <ul class="earlier">
+      <li>Diploma in Full Stack Web Development — Seedbuilders</li>
+      <li>Secure Coding — Secure Application Development</li>
+      <li>AWS Cloud Practitioner (in progress)</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Education</h2>
+    <ul class="earlier">
+      <li>B.Tech, Estate Management & Valuation — Federal University of Technology, Minna (03/2014–10/2018)</li>
+    </ul>
+  </section>
+</div>
+
+</body>
+</html>

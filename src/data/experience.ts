@@ -24,7 +24,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "NITEON",
-    role: "Frontend Engineer",
+    role: "Frontend Engineer (Contract, Part-Time)",
     location: "Remote, United States",
     start: "07/2024",
     end: "01/2026",
@@ -50,7 +50,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Africart Store Enterprise",
-    role: "Frontend Engineer",
+    role: "Frontend Engineer (Part-Time)",
     location: "Lagos, Nigeria",
     start: "02/2024",
     end: "12/2024",
@@ -62,7 +62,7 @@ export const experience: ExperienceEntry[] = [
   },
   {
     company: "Codemanic Software Solutions",
-    role: "Software Engineer (Frontend-Focused), Remote",
+    role: "Software Engineer (Frontend-Focused, Part-Time, Remote)",
     location: "Lagos, Nigeria",
     start: "08/2023",
     end: "08/2024",
