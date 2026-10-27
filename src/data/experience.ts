@@ -9,68 +9,66 @@ export type ExperienceEntry = {
 
 export const experience: ExperienceEntry[] = [
   {
-    company: "Value Payment Solutions",
-    role: "Software Engineer (Frontend-Focused)",
+    company: "Valuepay Payment Solutions / Microfinance Bank",
+    role: "Software Engineer",
     location: "Abuja, Nigeria",
     start: "05/2025",
     end: "Present",
     bullets: [
-      "Build and maintain frontend interfaces for payment and finance workflows using React and TypeScript, aligned with financial compliance requirements.",
-      "Improve frontend load performance and reliability for high-traffic user flows; introduced Sentry monitoring for faster issue detection and resolution.",
-      "Contribute to CI/CD workflows, Docker-based deployments, and Bash automation to streamline releases.",
-      "Write unit and integration tests with Jest and end-to-end tests with Cypress and Playwright, reducing regressions in production releases.",
-      "Review frontend code and contribute to shared engineering standards and best practices.",
+      "Work across Valuepay Payment Solutions (PSSP), Valuepay Microfinance Bank and MeterToken, building web and mobile features for payment, banking and utility products.",
+      "Build PSSP frontend features and connect them to backend APIs for business payment collection and transaction workflows.",
+      "Handle roughly half of the MFB mobile app frontend — new features, API integration, app state and investigating issues reported in use.",
+      "Own MeterToken's frontend day to day: planning and building features, fixing bugs and maintaining existing flows.",
+      "Trace issues through navigation, API responses, application state and payment flows; review changes and test before release.",
     ],
   },
   {
     company: "NITEON",
-    role: "Frontend Engineer (Contract, Part-Time)",
-    location: "Remote, United States",
+    role: "Frontend Engineer (Project-based)",
+    location: "Boulder, Colorado, USA",
     start: "07/2024",
     end: "01/2026",
     bullets: [
-      "Delivered frontend and mobile features using React Native, Flutter, and Next.js.",
-      "Led frontend performance improvements, increasing page load speed and SEO effectiveness by 20%.",
-      "Worked on rendering strategies and UI optimization for customer-facing dashboards.",
-      "Integrated Firebase services and implemented secure frontend data flows.",
-    ],
-  },
-  {
-    company: "SOS Creativity",
-    role: "Software Engineer (Contract)",
-    location: "Manchester, United Kingdom",
-    start: "07/2024",
-    end: "12/2024",
-    bullets: [
-      "Designed and maintained scalable frontend architectures using React and Next.js.",
-      "Implemented secure frontend patterns for authentication, form handling, and API communication.",
-      "Optimized frontend performance for dashboards and user onboarding flows.",
-      "Debugged and resolved production frontend issues in high-traffic environments.",
-    ],
-  },
-  {
-    company: "Africart Store Enterprise",
-    role: "Frontend Engineer (Part-Time)",
-    location: "Lagos, Nigeria",
-    start: "02/2024",
-    end: "12/2024",
-    bullets: [
-      "Designed and developed scalable React and React Native applications for an apartment booking and reservation platform.",
-      "Collaborated with backend engineers to integrate Laravel REST APIs and manage application state with Context API.",
-      "Improved performance, responsiveness, and maintainability through reusable components and frontend best practices.",
+      "Built marketplace and admin-dashboard features for a B2B platform connecting African businesses with international markets.",
+      "Worked across web and mobile with Next.js, React Native and Flutter, adapting the implementation to each interface.",
+      "Contributed to frontend changes linked to a reported 20% improvement in page-load speed and SEO effectiveness.",
+      "Worked on dashboard usability, rendering approaches and Firebase integrations for core user workflows.",
     ],
   },
   {
     company: "Codemanic Software Solutions",
-    role: "Software Engineer (Frontend-Focused, Part-Time, Remote)",
+    role: "Software Engineer (Frontend-focused, Project-based)",
     location: "Lagos, Nigeria",
     start: "08/2023",
-    end: "08/2024",
+    end: "12/2025",
     bullets: [
-      "Built and maintained scalable React applications using reusable component architectures.",
-      "Refactored legacy frontend codebases, reducing bug rates by 25% through improved testing practices and code review.",
-      "Built and maintained reusable UI components shared across multiple applications.",
-      "Led frontend implementation for assigned features, conducted code reviews, and mentored junior developers on React best practices.",
+      "Built and maintained React applications and reusable components, keeping shared UI patterns consistent.",
+      "Developed frontend features for digital tools supporting RCCG operations across multiple locations.",
+      "Refactored frontend code for maintainability and worked with designers to translate designs into consistent interfaces.",
+      "Used testing and code reviews to catch issues earlier, associated with a reported 25% reduction in frontend bugs.",
+    ],
+  },
+  {
+    company: "SOS Creativity",
+    role: "Software Engineer (Part-time)",
+    location: "Manchester, United Kingdom",
+    start: "07/2024",
+    end: "12/2024",
+    bullets: [
+      "Built React and Next.js features for dashboards and onboarding, focused on responsive layouts and clear user flows.",
+      "Integrated authentication, forms and APIs, and investigated production issues affecting key parts of the user journey.",
+    ],
+  },
+  {
+    company: "Africart Store Enterprise",
+    role: "Software Engineer — Frontend & Mobile",
+    location: "Lagos, Nigeria",
+    start: "02/2024",
+    end: "12/2024",
+    bullets: [
+      "Built features for Afribooking's guest and owner mobile apps and admin dashboard for an apartment-booking platform.",
+      "Implemented key booking flows: reservation requests, guest–owner price discussions and chat.",
+      "Connected the apps to Laravel APIs, managed shared UI state with Context API and reused components for consistency.",
     ],
   },
 ];
@@ -86,13 +84,22 @@ export type EarlierExperienceEntry = {
 
 export const earlierExperience: EarlierExperienceEntry[] = [
   {
-    role: "Full Stack Developer (Volunteer)",
-    org: "Navigating with Neol (NGO)",
+    role: "Mobile Engineer (Part-time)",
+    org: "Ration Technologies",
     location: "Lagos, Nigeria",
-    start: "09/2023",
-    end: "12/2024",
+    start: "",
+    end: "",
     summary:
-      "Developed full-stack systems for NGO digital outreach; improved site performance by 15% via optimized MongoDB and Node.js APIs.",
+      "Built and maintained Ration's customer and vendor mobile apps; connected screens to backend APIs, managed app state and navigation, and fixed issues in key workflows.",
+  },
+  {
+    role: "IT Engineer & Mobile Engineer (Part-time)",
+    org: "All Talentz",
+    location: "Ohio, USA",
+    start: "",
+    end: "",
+    summary:
+      "Mobile development and support for GET ATRA, Savewyze and Restore Capital across property restoration, personal finance and investment, alongside IT support.",
   },
   {
     role: "Software Developer (Intern)",
@@ -101,15 +108,24 @@ export const earlierExperience: EarlierExperienceEntry[] = [
     start: "03/2024",
     end: "09/2024",
     summary:
-      "Built REST APIs with Node.js, Express, and NestJS; designed and optimized PostgreSQL/MongoDB schemas with TypeORM; contributed to API docs and AWS deployments.",
+      "Built REST APIs and backend logic with Node.js, Express and NestJS (CRUD, business rules); worked with PostgreSQL, MongoDB and TypeORM migrations; documented APIs with Swagger and Postman and supported AWS deployments.",
   },
   {
-    role: "Full Stack Developer (Intern)",
+    role: "Full Stack Developer (Volunteer)",
+    org: "Navigating with Neol (NGO)",
+    location: "Lagos, Nigeria",
+    start: "09/2023",
+    end: "12/2024",
+    summary:
+      "Built full-stack features for outreach and resource-distribution tools; MongoDB and Node.js API work as part of a reported 15% site-performance improvement.",
+  },
+  {
+    role: "Software Developer Trainee",
     org: "Seedbuilders",
     location: "Abuja, Nigeria",
     start: "07/2022",
-    end: "06/2023",
+    end: "12/2022",
     summary:
-      "Intensive full-stack training in JavaScript, React, Node.js, PostgreSQL, and MongoDB; built scalable CRUD applications and startup MVPs.",
+      "Project-based training building CRUD applications and startup MVPs with JavaScript, React, Node.js and PostgreSQL.",
   },
 ];

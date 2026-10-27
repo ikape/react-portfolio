@@ -1,39 +1,14 @@
 import Link from "next/link";
-import { FiArrowUpRight, FiArrowRight, FiGithub } from "react-icons/fi";
+import { FiArrowUpRight, FiArrowRight } from "react-icons/fi";
 import type { Project } from "@/data/projects";
 import { Tag } from "./Tag";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
     <div className="group flex h-full flex-col rounded-lg border border-border bg-surface p-6 transition-colors hover:border-accent">
-      <div className="mb-4 flex items-start justify-between gap-4">
-        <h3 className="text-base font-medium text-foreground">{project.title}</h3>
-        <div className="flex shrink-0 gap-3 text-muted">
-          {project.repoUrl && (
-            <a
-              href={project.repoUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={`${project.title} on GitHub`}
-              className="transition-colors hover:text-accent"
-            >
-              <FiGithub size={18} />
-            </a>
-          )}
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label={`${project.title} live site`}
-              className="transition-colors hover:text-accent"
-            >
-              <FiArrowUpRight size={18} />
-            </a>
-          )}
-        </div>
-      </div>
-      <p className="mb-6 flex-1 text-sm leading-relaxed text-muted">
+      <p className="mb-2 font-mono text-xs text-accent">{project.category}</p>
+      <h3 className="mb-3 text-base font-medium text-foreground">{project.title}</h3>
+      <p className="mb-5 flex-1 text-sm leading-relaxed text-muted">
         {project.description}
       </p>
       <div className="flex flex-wrap gap-2">
@@ -41,14 +16,31 @@ export function ProjectCard({ project }: { project: Project }) {
           <Tag key={tech}>{tech}</Tag>
         ))}
       </div>
-      {project.caseStudy && (
-        <Link
-          href={`/projects/${project.slug}`}
-          className="mt-5 flex items-center gap-1.5 font-mono text-sm text-accent transition-opacity hover:opacity-80"
-        >
-          Read case study
-          <FiArrowRight size={14} />
-        </Link>
+      {(project.links.length > 0 || project.caseStudy) && (
+        <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-2 font-mono text-sm">
+          {project.links.map((link) => (
+            <a
+              key={link.url}
+              href={link.url}
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label={`${project.title} — ${link.label}`}
+              className="flex items-center gap-1 text-muted transition-colors hover:text-accent"
+            >
+              {link.label}
+              <FiArrowUpRight size={14} />
+            </a>
+          ))}
+          {project.caseStudy && (
+            <Link
+              href={`/projects/${project.slug}`}
+              className="flex items-center gap-1.5 text-accent transition-opacity hover:opacity-80"
+            >
+              Details
+              <FiArrowRight size={14} />
+            </Link>
+          )}
+        </div>
       )}
     </div>
   );

@@ -21,7 +21,7 @@ export function Experience() {
             {earlierExperience.map((entry) => (
               <div key={entry.role + entry.org} className="text-sm">
                 <div className="font-mono text-xs text-muted">
-                  {entry.start} — {entry.end}
+                  {entry.start ? `${entry.start} — ${entry.end}` : entry.location}
                 </div>
                 <p className="font-medium text-foreground">
                   {entry.role} · <span className="font-normal text-muted">{entry.org}</span>

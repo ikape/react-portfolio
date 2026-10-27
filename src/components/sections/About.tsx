@@ -13,6 +13,14 @@ export function About() {
             </p>
           ))}
         </div>
+        <dl className="mt-10 grid max-w-2xl grid-cols-3 gap-4 border-t border-border pt-8">
+          {site.stats.map((stat) => (
+            <div key={stat.label} className="flex flex-col">
+              <dt className="text-xs leading-snug text-muted">{stat.label}</dt>
+              <dd className="order-first text-3xl font-semibold text-accent">{stat.value}</dd>
+            </div>
+          ))}
+        </dl>
       </Reveal>
     </Section>
   );

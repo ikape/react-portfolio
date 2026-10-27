@@ -10,52 +10,65 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    label: "Languages",
-    skills: [
-      { name: "JavaScript", icon: "javascript" },
-      { name: "TypeScript", icon: "typescript" },
-      { name: "Python", icon: "python" },
-      { name: "Bash", icon: "gnubash" },
-    ],
-  },
-  {
     label: "Frontend",
     skills: [
+      { name: "TypeScript", icon: "typescript" },
+      { name: "JavaScript", icon: "javascript" },
       { name: "React", icon: "react" },
-      { name: "Next.js", icon: "nextdotjs" },
+      { name: "Next.js (CSR / SSR)", icon: "nextdotjs" },
       { name: "React Native", icon: "react" },
       { name: "Redux / Context API", icon: "redux" },
-      { name: "Tailwind CSS", icon: "tailwindcss" },
-      { name: "Shadcn UI" },
-      { name: "Accessibility & responsive design" },
+      { name: "HTML5 & CSS3" },
     ],
   },
   {
-    label: "Testing & Quality",
+    label: "UI & Accessibility",
+    skills: [
+      { name: "Tailwind CSS", icon: "tailwindcss" },
+      { name: "shadcn/ui" },
+      { name: "Responsive, accessible interfaces" },
+      { name: "Reusable component systems" },
+      { name: "CSS animations" },
+    ],
+  },
+  {
+    label: "Backend",
+    skills: [
+      { name: "Node.js / Express.js" },
+      { name: "NestJS" },
+      { name: "PostgreSQL / TypeORM" },
+      { name: "MongoDB" },
+      { name: "REST APIs, Swagger, Postman" },
+    ],
+  },
+  {
+    label: "Testing & Reliability",
     skills: [
       { name: "Jest", icon: "jest" },
       { name: "Cypress", icon: "cypress" },
       { name: "Playwright" },
+      { name: "Sentry monitoring", icon: "sentry" },
+      { name: "Production debugging" },
     ],
   },
   {
-    label: "Engineering Practices",
-    skills: [
-      { name: "CI/CD", icon: "githubactions" },
-      { name: "Docker", icon: "docker" },
-      { name: "Sentry", icon: "sentry" },
-      { name: "Code Review" },
-      { name: "Secure Coding" },
-      { name: "Agile / Scrum" },
-    ],
-  },
-  {
-    label: "Cloud & Tooling",
+    label: "Cloud & DevOps",
     skills: [
       { name: "AWS" },
+      { name: "Docker", icon: "docker" },
+      { name: "GitHub Actions / CI/CD", icon: "githubactions" },
       { name: "Vercel", icon: "vercel" },
       { name: "Netlify", icon: "netlify" },
       { name: "Firebase", icon: "firebase" },
+    ],
+  },
+  {
+    label: "Practices",
+    skills: [
+      { name: "Code review" },
+      { name: "Auth & payment workflows" },
+      { name: "Secure coding" },
+      { name: "Agile / Scrum" },
       { name: "Git", icon: "git" },
     ],
   },
