@@ -39,28 +39,29 @@ export const projects: Project[] = [
   {
     slug: "valuepay-mfb",
     title: "Valuepay MFB & PSSP",
-    category: "Banking & payment collection · Web + Mobile",
+    category: "Microfinance banking · Mobile + Web",
     description:
-      "Frontend for Valuepay Payment Solutions (business payment collection and transaction workflows) and roughly half of the Microfinance Bank mobile app — features, API integration and app state.",
-    stack: ["React", "React Native", "TypeScript", "Redux", "Sentry"],
+      "Significant ownership of the Valuepay Microfinance Bank React Native app — features, API integration, app state and production issues — plus frontend for Valuepay Payment Solutions' business payment collection.",
+    stack: ["React Native", "TypeScript", "Redux", "React", "Sentry"],
     links: [],
     featured: true,
     caseStudy: true,
     problem:
-      "A licensed bank and a payment-collection platform need web and mobile interfaces that handle money, where issues reported in use must be investigated quickly and correctly.",
-    role: "Build and update PSSP frontend features and connect them to backend APIs; handle roughly half of the MFB mobile app frontend, including new features, API integration, app state and investigating reported issues.",
+      "A licensed microfinance bank and a payment-collection platform need mobile and web interfaces that handle money, where issues reported in use must be investigated quickly and correctly.",
+    role: "Own a significant portion of the MFB mobile app frontend — feature implementation, API integration, application state and production issues — and build PSSP frontend features connected to backend APIs.",
     highlights: [
+      "Banking and payment screens and flows in React Native, wired to transaction-processing APIs",
+      "Debugging across navigation, app state, API communication and payment workflows",
       "Business payment collection and transaction workflows on web (React + TypeScript)",
-      "Mobile screens and flows in React Native, wired to backend APIs",
       "Unit, integration and end-to-end testing with Jest, Cypress and Playwright; production monitoring with Sentry",
     ],
   },
   {
     slug: "afribooking",
     title: "Afribooking",
-    category: "Property booking · Guest, owner & web apps",
+    category: "Property booking · Guest & owner mobile apps",
     description:
-      "Apartment-booking platform with a guest app, an owner app and a web admin dashboard — reservation requests, guest–owner price discussions and chat.",
+      "Apartment-booking platform with separate guest and property-owner mobile apps plus an admin dashboard — booking requests, reservation management, guest–owner price discussions and in-app chat.",
     stack: ["React Native", "React", "TypeScript", "Context API", "Laravel APIs"],
     links: [
       appStore("Find & Book", "https://apps.apple.com/ng/app/afribooking-find-book/id6476979170"),
@@ -81,7 +82,7 @@ export const projects: Project[] = [
   {
     slug: "niteon-marketplace",
     title: "NITEON Marketplace",
-    category: "B2B marketplace · Web",
+    category: "B2B marketplace · Web + Mobile",
     description:
       "B2B marketplace connecting African businesses with international markets. Built marketplace and admin-dashboard features, with rendering strategies tuned for SEO and speed.",
     stack: ["Next.js", "React Native", "Flutter", "Firebase", "Tailwind CSS"],
@@ -90,7 +91,7 @@ export const projects: Project[] = [
     caseStudy: true,
     problem:
       "A cross-border B2B platform needs a discoverable, fast storefront and usable admin dashboards to connect sellers and buyers.",
-    role: "Frontend engineer (project-based) on the web experience and admin dashboard, working across Next.js, React Native and Flutter surfaces.",
+    role: "Frontend engineer (project-based) across web and mobile product areas, working in Next.js, React Native and Flutter.",
     highlights: [
       "Marketplace and admin-dashboard features built from product requirements",
       "Dashboard usability, rendering approaches and Firebase integrations for core workflows",
@@ -101,7 +102,7 @@ export const projects: Project[] = [
     slug: "savewyze",
     title: "Savewyze",
     category: "Personal finance · Mobile",
-    description: "Savings, wallet transfers, gift cards and utility payments.",
+    description: "Savings, wallet transfers, gift cards and utility payments — contributed mobile features at All Talentz.",
     stack: ["React Native", "REST APIs"],
     links: [appStore("App Store", "https://apps.apple.com/ng/app/savewyze/id6449370010")],
   },
@@ -127,7 +128,7 @@ export const projects: Project[] = [
     category: "Food delivery · Customer & vendor apps",
     description:
       "Food ordering and delivery platform with separate customer and vendor apps for placing orders and managing vendor operations.",
-    stack: ["React Native", "REST APIs", "State management"],
+    stack: ["React Native", "REST APIs", "Navigation", "State management"],
     links: [
       appStore("Customer", "https://apps.apple.com/ng/app/ration-app/id6760186233"),
       appStore("Vendor", "https://apps.apple.com/ng/app/ration-vendor/id6756193702"),

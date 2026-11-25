@@ -16,6 +16,7 @@ import {
   SiNetlify,
   SiFirebase,
   SiGit,
+  SiFlutter,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 
@@ -37,6 +38,7 @@ const ICONS: Record<string, IconType> = {
   netlify: SiNetlify,
   firebase: SiFirebase,
   git: SiGit,
+  flutter: SiFlutter,
 };
 
 export function TechIcon({ name, size = 16 }: { name?: string; size?: number }) {

@@ -5,7 +5,7 @@ export function TimelineItem({ entry }: { entry: ExperienceEntry }) {
     <div className="relative border-l border-border pb-12 pl-8 last:pb-0">
       <span className="absolute -left-[5px] top-1.5 h-[9px] w-[9px] rounded-full bg-accent" />
       <div className="mb-1 font-mono text-xs text-muted">
-        {entry.start} — {entry.end}
+        {entry.start ? `${entry.start} — ${entry.end}` : "Part-time"}
       </div>
       <h3 className="text-base font-medium text-foreground">
         {entry.role} · <span className="text-muted">{entry.company}</span>

@@ -10,53 +10,39 @@ export type ExperienceEntry = {
 export const experience: ExperienceEntry[] = [
   {
     company: "Valuepay Payment Solutions / Microfinance Bank",
-    role: "Software Engineer",
+    role: "Software Engineer — Mobile & Web",
     location: "Abuja, Nigeria",
     start: "05/2025",
     end: "Present",
     bullets: [
-      "Work across Valuepay Payment Solutions (PSSP), Valuepay Microfinance Bank and MeterToken, building web and mobile features for payment, banking and utility products.",
-      "Build PSSP frontend features and connect them to backend APIs for business payment collection and transaction workflows.",
-      "Handle roughly half of the MFB mobile app frontend — new features, API integration, app state and investigating issues reported in use.",
-      "Own MeterToken's frontend day to day: planning and building features, fixing bugs and maintaining existing flows.",
-      "Trace issues through navigation, API responses, application state and payment flows; review changes and test before release.",
+      "Own a significant share of the microfinance banking mobile app's frontend in React Native — feature implementation, API integration, application state and production issues.",
+      "Build and maintain React Native interfaces and workflows for banking and payment operations, plus MeterToken, the utility-payment app on the App Store.",
+      "Integrate backend services to support transaction processing and business payment collection.",
+      "Investigate and resolve issues across mobile navigation, app state, API communication and payment workflows; improve reliability through testing and debugging.",
     ],
   },
   {
-    company: "NITEON",
-    role: "Frontend Engineer (Project-based)",
-    location: "Boulder, Colorado, USA",
-    start: "07/2024",
-    end: "01/2026",
-    bullets: [
-      "Built marketplace and admin-dashboard features for a B2B platform connecting African businesses with international markets.",
-      "Worked across web and mobile with Next.js, React Native and Flutter, adapting the implementation to each interface.",
-      "Contributed to frontend changes linked to a reported 20% improvement in page-load speed and SEO effectiveness.",
-      "Worked on dashboard usability, rendering approaches and Firebase integrations for core user workflows.",
-    ],
-  },
-  {
-    company: "Codemanic Software Solutions",
-    role: "Software Engineer (Frontend-focused, Project-based)",
+    company: "Ration Technologies",
+    role: "Mobile Engineer (Part-time)",
     location: "Lagos, Nigeria",
-    start: "08/2023",
-    end: "12/2025",
+    start: "",
+    end: "",
     bullets: [
-      "Built and maintained React applications and reusable components, keeping shared UI patterns consistent.",
-      "Developed frontend features for digital tools supporting RCCG operations across multiple locations.",
-      "Refactored frontend code for maintainability and worked with designers to translate designs into consistent interfaces.",
-      "Used testing and code reviews to catch issues earlier, associated with a reported 25% reduction in frontend bugs.",
+      "Built and maintained features for separate customer and vendor mobile apps on a food ordering and delivery platform.",
+      "Implemented ordering, delivery and vendor-operations workflows; integrated screens with backend services and managed navigation and state.",
+      "Resolved issues affecting key customer and vendor workflows and supported testing and maintenance.",
     ],
   },
   {
-    company: "SOS Creativity",
-    role: "Software Engineer (Part-time)",
-    location: "Manchester, United Kingdom",
-    start: "07/2024",
-    end: "12/2024",
+    company: "All Talentz",
+    role: "IT Engineer & Mobile Engineer (Part-time)",
+    location: "Ohio, USA",
+    start: "",
+    end: "",
     bullets: [
-      "Built React and Next.js features for dashboards and onboarding, focused on responsive layouts and clear user flows.",
-      "Integrated authentication, forms and APIs, and investigated production issues affecting key parts of the user journey.",
+      "Contributed to mobile development and maintenance across GET ATRA, Savewyze and Restore Capital.",
+      "GET ATRA: property damage documentation and insurance claims. Savewyze: savings, wallet transfers, gift cards and utility payments.",
+      "Supported Restore Capital through technical troubleshooting and product improvements.",
     ],
   },
   {
@@ -66,9 +52,43 @@ export const experience: ExperienceEntry[] = [
     start: "02/2024",
     end: "12/2024",
     bullets: [
-      "Built features for Afribooking's guest and owner mobile apps and admin dashboard for an apartment-booking platform.",
-      "Implemented key booking flows: reservation requests, guest–owner price discussions and chat.",
-      "Connected the apps to Laravel APIs, managed shared UI state with Context API and reused components for consistency.",
+      "Built features for Afribooking's guest and property-owner mobile apps and the admin dashboard.",
+      "Implemented booking requests, reservation management, guest–owner price discussions and in-app chat.",
+      "Integrated the apps with Laravel APIs, managed state with Context API and built reusable components shared across mobile screens.",
+    ],
+  },
+  {
+    company: "NITEON",
+    role: "Frontend Engineer (Project-based)",
+    location: "Boulder, Colorado, USA",
+    start: "07/2024",
+    end: "01/2026",
+    bullets: [
+      "Worked across web and mobile product areas of a B2B marketplace using Next.js, React Native and Flutter.",
+      "Built reusable interfaces and features for marketplace and administration workflows, with Firebase integrations.",
+      "Improved dashboard usability, rendering and frontend performance, linked to a reported 20% improvement in page-load speed and SEO effectiveness.",
+    ],
+  },
+  {
+    company: "SOS Creativity",
+    role: "Software Engineer (Part-time)",
+    location: "Manchester, United Kingdom",
+    start: "07/2024",
+    end: "12/2024",
+    bullets: [
+      "Built React and Next.js features for dashboards and onboarding, with authentication, APIs and forms.",
+      "Investigated production issues and built responsive, reusable interfaces.",
+    ],
+  },
+  {
+    company: "Codemanic Software Solutions",
+    role: "Software Engineer (Frontend-focused, Project-based)",
+    location: "Lagos, Nigeria",
+    start: "08/2023",
+    end: "12/2025",
+    bullets: [
+      "Built and maintained React applications and reusable components, including digital platforms supporting RCCG operations across locations.",
+      "Refactored for maintainability; used testing, debugging and code reviews, associated with a reported 25% reduction in frontend bugs.",
     ],
   },
 ];
@@ -83,24 +103,6 @@ export type EarlierExperienceEntry = {
 };
 
 export const earlierExperience: EarlierExperienceEntry[] = [
-  {
-    role: "Mobile Engineer (Part-time)",
-    org: "Ration Technologies",
-    location: "Lagos, Nigeria",
-    start: "",
-    end: "",
-    summary:
-      "Built and maintained Ration's customer and vendor mobile apps; connected screens to backend APIs, managed app state and navigation, and fixed issues in key workflows.",
-  },
-  {
-    role: "IT Engineer & Mobile Engineer (Part-time)",
-    org: "All Talentz",
-    location: "Ohio, USA",
-    start: "",
-    end: "",
-    summary:
-      "Mobile development and support for GET ATRA, Savewyze and Restore Capital across property restoration, personal finance and investment, alongside IT support.",
-  },
   {
     role: "Software Developer (Intern)",
     org: "Glumia Solutions",

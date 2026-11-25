@@ -4,13 +4,13 @@
 <meta charset="utf-8" />
 <title>Isaac Ikape — Resume</title>
 <style>
-  @page { size: A4; margin: 16mm 18mm; }
+  @page { size: A4; margin: 12mm 15mm; }
   * { box-sizing: border-box; }
   body {
     font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
     color: #171717;
-    font-size: 10.3pt;
-    line-height: 1.45;
+    font-size: 9.8pt;
+    line-height: 1.38;
     margin: 0;
   }
   .accent { color: #0891a8; }
@@ -35,7 +35,7 @@
     content: " \2022 ";
     color: #a3a3a3;
   }
-  section { margin-bottom: 13px; }
+  section { margin-bottom: 10px; }
   h2 {
     font-size: 10pt;
     text-transform: uppercase;
@@ -46,7 +46,7 @@
     margin: 0 0 8px 0;
   }
   .profile { margin: 0; color: #262626; }
-  .entry { margin-bottom: 9px; }
+  .entry { margin-bottom: 7px; }
   .entry:last-child { margin-bottom: 0; }
   .entry-head {
     display: flex;
@@ -69,6 +69,8 @@
   .skill-row b { color: #262626; }
   .earlier { font-size: 9.3pt; color: #404040; }
   .earlier li { margin-bottom: 3px; }
+  .cols2 { columns: 2; column-gap: 24px; }
+  .cols2 li { break-inside: avoid; }
   .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -80,7 +82,7 @@
 
 <header>
   <h1>Isaac Ikape</h1>
-  <p class="role">Software Engineer <span class="accent">(Frontend-Focused)</span></p>
+  <p class="role">Mobile Engineer <span class="accent">| React Native | TypeScript | Cross-Platform Development</span></p>
   <p class="contact">
     <span>ikapeisaac3@gmail.com</span>
     <span>+234 703 650 3218</span>
@@ -92,106 +94,137 @@
 
 <section>
   <h2>Profile</h2>
-  <p class="profile">Frontend-focused Software Engineer with 4+ years of experience building secure, scalable web and mobile applications using JavaScript, TypeScript, React, Next.js, and React Native. Experienced in automated testing (Jest, Cypress, Playwright), CI/CD, Docker, Sentry monitoring, and Agile development across Linux, macOS, and Windows environments.</p>
+  <p class="profile">Mobile and Software Engineer with 4+ years of professional experience specialising in cross-platform mobile development with React Native and TypeScript. Built and maintained production apps across fintech, payments, e-commerce, booking and business platforms, with strong knowledge of mobile architecture, API integration, state management, offline functionality, push notifications, real-time updates and performance optimisation. Takes ownership of mobile features from planning and implementation through testing, deployment and production support, working closely with backend engineers, designers and product teams.</p>
 </section>
 
 <section>
-  <h2>Skills</h2>
+  <h2>Core Technical Expertise</h2>
   <div class="skills-grid">
-    <div class="skill-row"><b>Languages:</b> JavaScript, TypeScript, Python, Bash</div>
-    <div class="skill-row"><b>Testing:</b> Jest, Cypress, Playwright</div>
-    <div class="skill-row"><b>Frontend:</b> React, Next.js, React Native, Redux, Context API, Tailwind CSS, Shadcn UI</div>
-    <div class="skill-row"><b>Practices:</b> CI/CD, Code Review, Agile/Scrum, Secure Coding</div>
-    <div class="skill-row"><b>Cloud/Tooling:</b> AWS, Vercel, Netlify, Docker, GitHub Actions, Firebase</div>
-    <div class="skill-row"><b>Monitoring:</b> Sentry, Production Debugging, Performance Optimization</div>
+    <div class="skill-row"><b>Mobile:</b> React Native, Flutter, cross-platform architecture, navigation &amp; state management, offline functionality, push notifications, real-time sync, Android &amp; iOS deployment</div>
+    <div class="skill-row"><b>Performance &amp; Reliability:</b> Low-end device optimisation, startup &amp; rendering performance, network optimisation, crash monitoring, production debugging, release management</div>
+    <div class="skill-row"><b>Frontend:</b> React, Next.js, JavaScript, TypeScript, Redux, Context API, Tailwind CSS, reusable components</div>
+    <div class="skill-row"><b>API &amp; Backend:</b> REST APIs, Node.js, Express, NestJS, auth, payment gateway integration, PostgreSQL, MongoDB, Firebase</div>
+    <div class="skill-row"><b>Testing:</b> Jest, Cypress, Playwright; unit, integration and end-to-end testing</div>
+    <div class="skill-row"><b>DevOps &amp; Tooling:</b> Git, GitHub Actions, CI/CD, Docker, AWS, Sentry, Swagger, Postman</div>
   </div>
 </section>
 
 <section>
-  <h2>Experience</h2>
+  <h2>Professional Experience</h2>
 
   <div class="entry">
     <div class="entry-head">
-      <span class="entry-title">Software Engineer (Frontend-Focused) <span class="entry-org">— Value Payment Solutions</span></span>
+      <span class="entry-title">Software Engineer (Full-time) <span class="entry-org">— Valuepay Payment Solutions / Valuepay Microfinance Bank</span></span>
       <span class="entry-date">05/2025 – Present</span>
     </div>
     <div class="entry-loc">Abuja, Nigeria</div>
     <ul>
-      <li>Build and maintain frontend interfaces for payment and finance workflows using React and TypeScript, aligned with financial compliance requirements.</li>
-      <li>Improve frontend load performance and reliability for high-traffic user flows; introduced Sentry monitoring for faster issue detection and resolution.</li>
-      <li>Contribute to CI/CD workflows, Docker-based deployments, and Bash automation to streamline releases.</li>
-      <li>Write unit/integration tests (Jest) and end-to-end tests (Cypress, Playwright), reducing regressions in production releases.</li>
+      <li>Contribute to web and mobile applications across payment processing, microfinance banking and utility payment products.</li>
+      <li>Own significant portions of the microfinance banking mobile app frontend: feature implementation, API integration, application state and production issues.</li>
+      <li>Develop and maintain React Native interfaces and workflows supporting banking and payment operations.</li>
+      <li>Integrate backend services and APIs for transaction processing and business payment collection.</li>
+      <li>Investigate and resolve issues across mobile navigation, application state, API communication and payment workflows; improve reliability through testing and debugging.</li>
     </ul>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <span class="entry-title">Frontend Engineer, Contract/Part-Time <span class="entry-org">— NITEON</span></span>
-      <span class="entry-date">07/2024 – 01/2026</span>
+      <span class="entry-title">Mobile Engineer (Part-time) <span class="entry-org">— Ration Technologies</span></span>
+      <span class="entry-date"></span>
     </div>
-    <div class="entry-loc">Remote, United States</div>
+    <div class="entry-loc">Lagos, Nigeria</div>
     <ul>
-      <li>Delivered frontend and mobile features using React Native, Flutter, and Next.js.</li>
-      <li>Led frontend performance improvements, increasing page load speed and SEO effectiveness by 20%.</li>
-      <li>Integrated Firebase services and implemented secure frontend data flows.</li>
+      <li>Developed and maintained features for separate customer and vendor mobile apps on a food ordering and delivery platform.</li>
+      <li>Implemented ordering, delivery and vendor-operations workflows; integrated screens with backend services and managed navigation and state.</li>
+      <li>Resolved issues affecting key customer and vendor workflows; supported testing and maintenance.</li>
     </ul>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <span class="entry-title">Software Engineer, Contract <span class="entry-org">— SOS Creativity</span></span>
-      <span class="entry-date">07/2024 – 12/2024</span>
+      <span class="entry-title">IT Engineer &amp; Mobile Engineer (Part-time) <span class="entry-org">— All Talentz</span></span>
+      <span class="entry-date"></span>
     </div>
-    <div class="entry-loc">Manchester, United Kingdom</div>
+    <div class="entry-loc">Ohio, USA</div>
     <ul>
-      <li>Designed and maintained scalable frontend architectures using React and Next.js.</li>
-      <li>Implemented secure frontend patterns for authentication, form handling, and API communication.</li>
-      <li>Debugged and resolved production frontend issues in high-traffic environments.</li>
+      <li>Contributed to mobile development and maintenance across GET ATRA, Savewyze and Restore Capital.</li>
+      <li>GET ATRA: property damage documentation and insurance claims. Savewyze: savings, wallet transfers, gift cards and utility payments.</li>
+      <li>Supported Restore Capital through technical troubleshooting and product improvements.</li>
     </ul>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <span class="entry-title">Frontend Engineer, Part-Time <span class="entry-org">— Africart Store Enterprise</span></span>
+      <span class="entry-title">Software Engineer — Frontend &amp; Mobile (Full-time) <span class="entry-org">— Africart Store Enterprise</span></span>
       <span class="entry-date">02/2024 – 12/2024</span>
     </div>
     <div class="entry-loc">Lagos, Nigeria</div>
     <ul>
-      <li>Designed and developed scalable React and React Native apps for an apartment booking and reservation platform.</li>
-      <li>Integrated Laravel REST APIs and managed application state with Context API.</li>
+      <li>Developed features for Afribooking's guest and property-owner mobile apps and administration dashboard.</li>
+      <li>Implemented booking requests, reservation management, guest–owner price discussions and in-app chat.</li>
+      <li>Integrated the apps with Laravel backend APIs; managed state with Context API and built reusable components across mobile screens.</li>
     </ul>
   </div>
 
   <div class="entry">
     <div class="entry-head">
-      <span class="entry-title">Software Engineer, Part-Time/Remote <span class="entry-org">— Codemanic Software Solutions</span></span>
-      <span class="entry-date">08/2023 – 08/2024</span>
+      <span class="entry-title">Frontend Engineer (Project-based) <span class="entry-org">— NITEON</span></span>
+      <span class="entry-date">07/2024 – 01/2026</span>
+    </div>
+    <div class="entry-loc">Boulder, Colorado, USA</div>
+    <ul>
+      <li>Worked across web and mobile areas of a B2B marketplace connecting African businesses with international markets, using Next.js, React Native and Flutter.</li>
+      <li>Built reusable interfaces and features for marketplace and administration workflows; integrated Firebase.</li>
+      <li>Improved dashboard usability, rendering and frontend performance (reported 20% improvement in page-load speed and SEO effectiveness).</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Software Engineer (Part-time) <span class="entry-org">— SOS Creativity</span></span>
+      <span class="entry-date">07/2024 – 12/2024</span>
+    </div>
+    <div class="entry-loc">Manchester, United Kingdom</div>
+    <ul>
+      <li>Developed React and Next.js features for dashboards and onboarding workflows, including authentication, APIs and forms.</li>
+      <li>Investigated production issues; built responsive interfaces and reusable components.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title">Software Engineer (Frontend-focused, Project-based) <span class="entry-org">— Codemanic Software Solutions</span></span>
+      <span class="entry-date">08/2023 – 12/2025</span>
     </div>
     <div class="entry-loc">Lagos, Nigeria</div>
     <ul>
-      <li>Built and maintained scalable React applications using reusable component architectures.</li>
-      <li>Refactored legacy frontend codebases, reducing bug rates by 25% through improved testing and code review.</li>
-      <li>Led frontend implementation for assigned features, conducted code reviews, and mentored junior developers.</li>
+      <li>Developed and maintained React applications and reusable components, including digital platforms supporting RCCG operations across locations.</li>
+      <li>Refactored for maintainability; contributed through testing, debugging and code reviews (reported 25% reduction in frontend bugs).</li>
     </ul>
   </div>
+
 </section>
 
 <section>
   <h2>Earlier Experience</h2>
   <ul class="earlier">
-    <li><b>Full Stack Developer (Volunteer), Navigating with Neol</b> — 09/2023–12/2024 — improved site performance 15% via optimized MongoDB/Node.js APIs.</li>
-    <li><b>Software Developer (Intern), Glumia Solutions</b> — 03/2024–09/2024 — built REST APIs with Node/Express/NestJS; optimized PostgreSQL/MongoDB with TypeORM.</li>
-    <li><b>Full Stack Developer (Intern), Seedbuilders</b> — 07/2022–06/2023 — intensive training building CRUD apps and startup MVPs.</li>
+    <li><b>Full Stack Developer (Volunteer), Navigating with Neol (NGO)</b> — 09/2023–12/2024 — Node.js APIs and MongoDB for outreach and resource-distribution platforms.</li>
+    <li><b>Software Developer (Intern), Glumia Solutions</b> — 03/2024–09/2024 — REST APIs with Node/Express/NestJS; PostgreSQL, MongoDB, TypeORM; Swagger/Postman; AWS deployments.</li>
+    <li><b>Software Developer Trainee, Seedbuilders</b> — 07/2022–12/2022 — CRUD apps and startup MVPs with JavaScript, React, Node.js and PostgreSQL.</li>
   </ul>
 </section>
 
 <section>
-  <h2>Selected Projects</h2>
-  <ul class="earlier">
-    <li><b>Afribooking Agent App</b> — React, React Native, Node.js, MongoDB, AWS, Docker. Property booking platform with in-app payments and push notifications.</li>
-    <li><b>Africartz User Booking App</b> — React Native, TypeScript, Tailwind CSS, Laravel. Apartment booking, inspection, and payment flow.</li>
-    <li><b>NITEON Marketplace</b> — Next.js, Tailwind CSS, Redux, Node.js, AWS. B2B marketplace connecting African businesses globally.</li>
-    <li><b>Glumia Solutions</b> — React.js, Next.js, TypeScript, PostgreSQL, AWS, Firebase. Multi-sector software solutions.</li>
+  <h2>Selected Products</h2>
+  <ul class="earlier cols2">
+    <li><b>MeterToken</b> — utility payment product (React Native).</li>
+    <li><b>Savewyze</b> — savings, wallet transfers, gift cards and utility payments.</li>
+    <li><b>Restore Capital</b> — investment product.</li>
+    <li><b>GET ATRA</b> — property damage and insurance claim workflows.</li>
+    <li><b>Afribooking (Find &amp; Book / Own &amp; Manage)</b> — booking platform with guest and owner apps and a web app.</li>
+    <li><b>Ration (Customer / Vendor)</b> — food ordering and delivery with separate customer and vendor apps.</li>
+    <li><b>amsos ai</b> — e-commerce automationOS for merchants.</li>
+    <li><b>NITEON Marketplace</b> — B2B marketplace connecting African businesses with international markets.</li>
   </ul>
 </section>
 
@@ -199,15 +232,16 @@
   <section>
     <h2>Certifications</h2>
     <ul class="earlier">
-      <li>Diploma in Full Stack Web Development — Seedbuilders</li>
+      <li>Software Development Diploma — Seedbuilders</li>
       <li>Secure Coding — Secure Application Development</li>
-      <li>AWS Cloud Practitioner (in progress)</li>
+      <li>AWS Cloud Practitioner (in view)</li>
     </ul>
   </section>
   <section>
     <h2>Education</h2>
     <ul class="earlier">
-      <li>B.Tech, Estate Management & Valuation — Federal University of Technology, Minna (03/2014–10/2018)</li>
+      <li>B.Tech, Estate Management &amp; Valuation — Federal University of Technology, Minna (03/2014–10/2018)</li>
+      <li>NYSC — IT Support Specialist, Energy Commission of Nigeria (02/2019–03/2020)</li>
     </ul>
   </section>
 </div>
